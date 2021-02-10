@@ -1,0 +1,126 @@
+.parallax {
+    /* The image used */
+    background-image: url("./../Assets/Headshot.jpg");
+  
+    /* Set a specific height */
+    min-height: 1200px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.upperText{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    padding-top: 70%;
+}
+.lowerText{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    padding-top:3%;
+    padding-bottom: 3%;
+    font-weight: bold;
+}
+
+.container{
+
+}
+
+.projectHeader{
+    color: rgb(85, 182, 153);
+    text-align: center;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap; /*same as flex-direction:column;*/
+}
+
+[class*=col-]{
+    flex-basis: 100%;
+}
+
+@media only screen and (min-width:768px){
+    .col-1 {flex-basis: 8.33%;}
+    .col-2 {flex-basis: 16.66%;}
+    .col-3 {flex-basis: 25%;}
+    .col-4 {flex-basis: 33.33%;}
+    .col-5 {flex-basis: 41.66%;}
+    .col-project {
+       width: 300px;
+       height: 300px;
+       border: 3px solid black;
+    }
+    .box1{
+        flex-basis: 31%;
+        text-align: center;
+        /* padding-right: 1%;
+        padding-left: 6%;; */
+        padding-left: 5%;
+    }
+    .box1Flex{
+        max-width: 300px;
+        height: 300px;
+        border: 3px solid black;
+        text-align: center;
+        background-color: red;
+    }
+    .box2{
+        flex-basis: 31%;
+        text-align: center;
+        /* padding-right: 1%; */
+        padding-left: 5%;
+    }
+    .box2Flex{
+        max-width: 300px;
+        height: 300px;
+        border: 3px solid black;
+        text-align: center;
+        background-color: red;
+    }
+    .box3{
+        flex-basis: 31%;
+        text-align: center;
+        /* padding-right: 1%; */
+        padding-left: 5%;
+    }
+    .box3Flex{
+        max-width: 300px;
+        height: 300px;
+        border: 3px solid black;
+        text-align: center;
+        background-color: red;
+    }
+    .col-7 {flex-basis: 58.33%;}
+    .col-8 {flex-basis: 66.66%;}
+    .col-9 {flex-basis: 75%;}
+    .col-10 {flex-basis: 83.33%;}
+    .col-11 {flex-basis: 91.66%;}
+    .col-12 {flex-basis: 100%;}
+    .row{
+        flex-direction: row;
+    }
+    
+}
+
+.projectImage{
+    flex-basis: 50%;
+    width: 100%;
+    object-fit: cover;
+}
+

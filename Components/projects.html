@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+  body {
+    position: relative;
+  }
+  ul.nav-pills {
+    top: 20px;
+    position: relative;
+  }
+  div.col-9 div {
+    height: 525px;
+  }
+  .projectContainer{
+    height: 525px;
+    overflow-y: hidden;
+  }
+  </style>
+</head>
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="1">
+
+<div class="container-fluid">
+  <div class="row">
+    <nav class="col-sm-3 col-4" id="myScrollspy">
+      <ul class="nav nav-pills flex-column" id="listScroll">
+        <li class="nav-item">
+          <a class="nav-link" href="#shopify" style="color: rgb(85, 182, 153);">Shopify FAQ App</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#insta" style="color: rgb(85, 182, 153);">Mock Instagram</a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="#iOS" style="color: rgb(85, 182, 153);">iOS Food Rater App</a>
+        </li> -->
+      </ul>
+    </nav>
+    <div class="col-sm-9 col-9 projectContainer">
+      <div id="shopify" style="border: 2px solid rgb(33, 90, 73); background-color: rgb(85, 182, 153) ;">    
+        <video width="100%" controls> 
+            <source src="./../Assets/Shopify-App-Demo.webm" type="video/webm">
+            <source src="./../Assets/Shopify-App-Demo.mov" type="video/mov">
+            <source src="./../Assets/Shopify-App-Demo.mp4" type="video/mp4">
+            <source src="./../Assets/Shopify-App-Demo.ogg" type="audio/ogg">
+        </video>
+        <h1 style="text-align:center; color:white">Shopify FAQ App</h1>
+      </div>
+      <div id="insta" style="border: 2px solid rgb(33, 90, 73); background-color: rgb(85, 182, 153) ;"> 
+        <video width="100%" controls> 
+            <source src="./../Assets/Insta_Demo.webm" type="video/webm">
+            <source src="./../Assets/Insta_Demo.mov" type="video/mov">
+            <source src="./../Assets/Insta_Demo.mp4" type="video/mp4">
+            <source src="./../Assets/Shopify-App-Demo.ogg" type="audio/ogg">
+        </video>
+        <h1 style="text-align:center; color:white">Zootopia Themed Instagram App</h1>
+      </div>        
+      <!-- <div id="iOS" style="border: 2px solid rgb(33, 90, 73); background-color: rgb(85, 182, 153) ;">         
+        <h1 style="text-align:center; color:white">Previous Internships</h1>
+        <p style="padding:2%; color:white;"><strong>Aspen Capital: May 2019-August 2019</strong> <br/> <strong>Randall-Reilly: May 2017-August 2017</strong><br/><br/> Please see my resume for more details!</p>
+      </div>  -->
+    </div>
+  </div>
+</div>
+
+<!-- <script>
+    var header = document.getElementById("listScroll");
+    var alinks = header.getElementsByClassName("nav-link");
+    console.log("alinks", alinks);
+    for (var i=0; i<alinks.length; i++){
+        alinks[i].addEventListener("click", function(){
+            var current = document.getElementsByClassName("active");
+            console.log("Current Active:", current);
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+        })
+    }
+</script> -->
+
+</body>
+</html>
